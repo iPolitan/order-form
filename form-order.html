@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap készítése</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" name="name" type="text" placeholder="Írd ide a neved" required>
+                </div>
+                <div>
+                    <label for="email">Email cím: *</label>
+                    <input id="email" name="email" type="email" placeholder="Írd ide az e-mail címed" required>
+                </div>
+                <div>
+                    <label for="address">Szállítási cím: *</label>
+                    <input id="address" name="address" type="text" placeholder="Írd ide a címed" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés: </label>
+                    <textarea id="comment" name="comment" type="text" rows=5></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termék adatai</legend>
+                <span>Extra feltét:</span>
+                <div>
+                    <input checked id="nothing" name="Extra" type="radio" value="0">
+                    <label for="nothing">Nem kérek</label>
+                </div>
+                <div>
+                    <input id="cheese" name="Extra" type="radio" value="300">
+                    <label for="cheese">Sajt</label>
+                </div>
+                <div>
+                    <input id="meet" name="Extra" type="radio" value="600">
+                    <label for="meet">Hús</label>
+                </div>
+                <div>
+                    <input id="tomato" name="Extra" type="radio" value="1000">
+                    <label for="tomato">Paradicsom</label>
+                </div>
+                <div>
+                    <label for="sauce">Szósz</label>
+                    <select name="sauce" id="sauce">
+                        <option value="100" selected>Majonéz</option>
+                        <option value="0">Ketchup</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Mennyiség:</label>
+                    <input type="number" name="quantity" id="quantity" min="1" max="10">
+                </div>
+            </fieldset>
+            <div>
+                <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
